@@ -1,0 +1,67 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style type="text/css">
+	.all-images-container{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.image-element{
+		max-width: 400px;
+	}
+</style>
+
+<strong>Hello World</strong>
+
+<p>Nginx Image optimization test environment</p>
+
+<div class="all-images-container">
+	<div>
+		<div>Insidr.co</div>
+		<img src="https://insidr.co/wp-content/uploads/2018/03/Where-to-stay-in-Paris.jpeg" class="image-element">
+	</div>
+
+	<div>
+		<div>Cloudinary</div>
+		<img src="https://res.cloudinary.com/insidr/image/upload/v1531245800/Tests/Where-to-stay-in-Paris.jpg" class="image-element">
+	</div>
+
+	<div>
+		<div>Local Image</div>
+		<img src="https://test.insidr.co/image/Where-to-stay-in-Paris.jpg" class="image-element">
+	</div>
+
+	<div>
+		<div>Local Converted</div>
+		<img src="https://test.insidr.co/converted/Where-to-stay-in-Paris.jpg" class="image-element">
+	</div>
+
+	<div>
+		<div>Local cached</div>
+		<img src="https://test.insidr.co/cached/Where-to-stay-in-Paris.jpg" class="image-element">
+	</div>
+</div>
+
+<script type="text/javascript">
+	console.log('Hello World')
+
+	$.ajax({
+    	url: 'http://email.magroove.com/sendy/subscribe',
+    	type: 'post',
+		data: {
+			name: 'Fabricio',
+			email: 'fafaschiavo@msn.com',
+			list: 'referrer',
+			country: 'France',
+			referrer: 'Test URl',
+		},
+    	success: function(data) {
+        	console.log(data);
+    	},
+    	failure: function(data) {
+        	console.log('Got an error dude');
+    	}
+    });
+
+</script>
